@@ -1,6 +1,6 @@
 ## Alura 
 * ***
-###Formação Python :snake:
+### Formação Python :snake:
 
 ---
 
