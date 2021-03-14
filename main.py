@@ -1,33 +1,22 @@
-# # criando um arquivo .txt
-arquivo = open("palavras.txt", "a") 
+import forca
+import adivinhacao
 
-arquivo.write("ameixa\n")
+def escolhe_jogo():
+    print("********************************")
+    print("***Escolha o jogo que deseja!***")
+    print("********************************")
 
-# arquivo.close() # sempre fechar o arquivo após a execução
-# arquivo = open("palavras.txt", "a") #Para abrir e adicionar uma nova informação usamos a função a, de appended
+    print("(1) Forca  (2) Adivinhação")
 
+    jogo = int(input("Qual jogo deseja? "))
 
-# Modificadores de acesso:
-# # r - leitura 
-# arquivo = open("palavras.txt", "r")
-# arquivo.read()
+    if(jogo == 1):
+        print("Você escolheu Forca")
+        forca.jogar()
 
-# # a - inclusão 
-# arquivo = open("palavras.txt", "a")
+    elif(jogo == 2):
+        print("Você escolheu Adivinhação")
+        adivinhacao.jogar()
 
-# # w - escrita
-# arquivo = open("palavras.txt", "w")
-
-# # b - binarios
-
-# # rb - abrir imagens 
-# imagem = open("foto.jpg", "rb")
-
-# # wb - criar copias de imagens
-# logo = open('python-logo.png', 'rb')
-# data = logo.read()
-# logo.close()
-
-# logo2 = open('python-logo2.png', 'wb')
-# logo2.write(data)
-# logo2.close()
+if(__name__ == "__main__"):
+    escolhe_jogo()
